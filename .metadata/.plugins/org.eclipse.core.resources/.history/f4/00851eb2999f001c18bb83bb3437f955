@@ -1,0 +1,57 @@
+package intities;
+
+public class Account {
+	
+	private String holder;
+	private double number;
+	private double valueInitial;
+	private double valueDeposit;
+	
+	public String getHolder() {
+		return holder;
+	}
+
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+
+	public double getNumber() {
+		return number;
+	}
+
+	public void setNumber(double number) {
+		this.number = number;
+	}
+
+	public double getValueInitial() {
+		return valueInitial;
+	}
+
+	public void setValueInitial(double valueInitial) {
+		this.valueInitial = valueInitial;
+	}
+
+	public double getValueDeposit() {
+		return valueDeposit;
+	}
+
+	public void setValueDeposit(double valueDeposit) {
+		this.valueDeposit = valueDeposit;
+	}
+
+	public Account(String holder, double number, double valueInitial, double valueDeposit) {
+		super();
+		this.holder = holder;
+		this.number = number;
+		this.valueInitial = valueInitial;
+		this.valueDeposit = valueDeposit;
+	}
+
+	public Account() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public double Balance() {
+		return valueInitial + valueDeposit;
+	}
+}

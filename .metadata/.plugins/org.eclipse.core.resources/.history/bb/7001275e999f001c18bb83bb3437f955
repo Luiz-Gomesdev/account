@@ -1,0 +1,28 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import intities.AccountNumber;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		AccountNumber ac = new AccountNumber();
+		
+		System.out.println("Enter account number: ");
+		ac.setHolder(sc.nextLine());
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

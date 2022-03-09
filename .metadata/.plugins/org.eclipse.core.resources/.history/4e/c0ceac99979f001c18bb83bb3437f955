@@ -1,0 +1,13 @@
+package intities;
+
+public class AccountNumber {
+	
+	private String holder;
+	private double number;
+	private double valueInitial;
+	private double valueDeposit;
+	
+	public double Balance() {
+		return valueInitial + valueDeposit;
+	}
+}

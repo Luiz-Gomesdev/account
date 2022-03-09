@@ -1,0 +1,53 @@
+package intities;
+
+public class AccountNumber {
+	
+	private String holder;
+	private double number;
+	private double valueInitial;
+	private double valueDeposit;
+	
+	public String getHolder() {
+		return holder;
+	}
+
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+
+	public double getNumber() {
+		return number;
+	}
+
+	public void setNumber(double number) {
+		this.number = number;
+	}
+
+	public double getValueInitial() {
+		return valueInitial;
+	}
+
+	public void setValueInitial(double valueInitial) {
+		this.valueInitial = valueInitial;
+	}
+
+	public double getValueDeposit() {
+		return valueDeposit;
+	}
+
+	public void setValueDeposit(double valueDeposit) {
+		this.valueDeposit = valueDeposit;
+	}
+
+	public AccountNumber(String holder, double number, double valueInitial, double valueDeposit) {
+		super();
+		this.holder = holder;
+		this.number = number;
+		this.valueInitial = valueInitial;
+		this.valueDeposit = valueDeposit;
+	}
+
+	public double Balance() {
+		return valueInitial + valueDeposit;
+	}
+}
